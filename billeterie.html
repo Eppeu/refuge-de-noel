@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Billeterie: Refuge de Noël</title>
+    <link rel="icon" type="image/png" href="logo.png"/>
+</head>
+
+<body>
+    
+    <header>
+        <section> 
+            <figure class="header__figure"> <!-- logo + bouton -->   
+                <a href="./index.html"><img src="public/icons/logo.png" alt="logo"></a>
+                <div class="Billeterie_text">
+                        <a href="./billeterie.html" class="header_button">
+                        <img class="Header_icons" src="public/icons/billeteire.png" alt="incone billeterie">
+                        Billeterie
+                    </a>
+                </div>
+            </figure>
+
+            <ul class="header__nav"> <!-- Menue -->
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="adoption.php">Adoption</a></li>
+                <li><a href="propos.php">À propos</a></li>
+            </ul>
+
+                <div class="Donation_text">
+                    <a href="don.html"  class="header_button" >
+                        <img class="Header_icons" src="public/icons/money.png" alt="icone don">
+                        Faire un don
+
+                    </a>
+                </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="Main__billet"> <!--boutons clicables/ deroulants pour les billets -->
+            <h2>Billeterie</h2>
+
+            <div class="billets"> <!-- Billet 1-->
+                <input type="radio" name="ticket_box" id="click-box">
+                <label class="billet_choix" for="click-box"> 
+                    <img src="public/adoption/herisson.jpg" alt="herisson">   
+                    <h3>Billet 1 jour</h3> 
+                    <p>Un accès pendant 1 jour au refuge de noël ces activités</p>   
+                    <div class="price_1day">
+                        <h3>12€</h3>
+                        <a href="#" class="button_other">Acheter</a>
+                    </div>                    
+                </label>  
+
+                <input type="radio" name="ticket_box" id="click-box2"> <!-- Billet 2-->
+                <label class="billet_choix" for="click-box2">
+                    <img src="public/adoption/biche.jpg" alt="biche">   
+                    <h3>Billet 2 jours</h3> 
+                    <p>Un accès pendant 2 jours au parc et ces activités</p>  
+                    <div class="price_2day">
+                        <h3>21€</h3>
+                        <a href="#" class="button_other">Acheter</a>
+                    </div>    
+                </label>
+
+                <input type="radio" name="ticket_box" id="click-box3"> <!-- Billet 3-->
+                <label class="billet_choix" for="click-box3">
+                    <img src="public/adoption/loup.jpg" alt="loup">   
+                    <h3>Billet Annuel</h3> 
+                    <p>Un accès à l'année au refuge de noël ces activités</p>  
+                    <div class="price_year">
+                        <h3>540€</h3>
+                        <a href="#" class="button_other">Acheter</a>
+                    </div>    
+                </label>               
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer> <!-- reseaux sociaux -->
+        <section class="Footer__Join"> 
+            <h2>Nous rejoindre!</h2>
+            <div class="Footer_Join_container">
+                <a href="https://www.youtube.com/">
+                    <img src="public/icons/youtube.svg" alt="youtube">
+                </a>
+                <a href="https://www.tiktok.com/@le_refuge_de_noel">
+                    <img src="public/icons/tiktok.svg" alt="Tiktok">
+                </a>
+                <a href="https://www.instagram.com/le_refuge_de_noel/">
+                    <img src="public/icons/instagram.svg" alt="Instagram">
+                </a>
+                <a href="https://www.tripadvisor.fr/Profile/Go33070313324">
+                    <img src="public/icons/tripadvisor.svg" alt="Tropadvisor">
+                </a>
+            </div>
+        </section>
+
+        <section class="Footer_legal">
+            <div class="Footer_legal_container">
+                <div class="Legal_mention">
+                    <p>@Blahaj - 2025 - Tous droits réservés - <strong><a href="mentions_legale.html">Mention Legales</a></strong></p>
+                </div>
+
+                <div class="Partners">
+                    <img src="public/icons/occitanie.png" alt="Region Occitanie">
+                    <img class="logo_footer" src="public/icons/logo.png" alt="Logo Refuge">
+                </div>
+
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

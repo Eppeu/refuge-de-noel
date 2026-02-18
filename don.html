@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Don: Refuge de Noël</title>
+    <link rel="icon" type="image/png" href="logo.png"/>
+</head>
+<body>
+    <header>
+        <section>
+            <figure class="header__figure"> <!-- logo + bouton -->  
+                <a href="./index.html"><img src="public/icons/logo.png" alt="placeholder"></a>
+                <div class="Billeterie_text">
+                        <a href="./billeterie.html" class="header_button">
+                        <img class="Header_icons" src="public/icons/billeteire.png" alt="logo">
+                        Billeterie
+                    </a>
+                </div>
+            </figure>
+            <ul class="header__nav"> <!-- Menue -->
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="adoption.php">Adoption</a></li>
+                <li><a href="propos.php">À propos</a></li>
+            </ul>
+                <div class="Donation_text">
+                    <a href="don.html"  class="header_button" >
+                        <img class="Header_icons" src="public/icons/money.png" alt="icone faire un don">
+                        Faire un don
+
+                    </a>
+                </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="From_information"> <!-- Formulaire info personelle-->
+            <div class="form_container">
+                <form action="don.html" method="post" class="form_donation">
+                    <div class="Form_container_information">
+                        <h2>Information de payement</h2>
+                            <div class="user_name_container">
+                                <div class="user_name">
+                                    <label for="Last_name">Nom*</label>
+                                    <input type="text" id="Last_name" required>
+                                </div>
+                                <div class="user_name">
+                                    <label for="First_name">Prénom*</label>
+                                    <input type="text" id="First_name" required>
+                                </div>
+                            </div>
+                            
+                            <div class="user_location">
+                                <label class="information" for="user_home_adress">Adresse*</label>
+                                <input type="text" id="user_home_adress" required>
+
+                                <label class="information" for="user_home_floor">Appartement, suite, etc.</label>
+                                <input type="text" id="user_home_floor">
+
+                                <label class="information" for="user_postal_code">Code Postal*</label>
+                                <input type="number" id="user_postal_code" required>
+
+                                <label class="information" for="user_city">Code Postal*</label>
+                                <input type="text" id="user_city" required>
+
+                                <label class="information" for="user_country">Pays*</label>
+                                <input type="text" id="user_country" required>
+                            </div>
+                    </div>
+
+                    <div class="Form__other_container">  <!--formulaire moyens de paiement-->
+                        <div class="form_text">
+                            <h1>Soutenez-nous !</h1>
+                            <p>Le refuge vit grâce à l'engagement de ses visiteurs. Un petit don permet au refuge de vivre sans passer par des campagnes de pubs coûteuses. Merci de votre soutien.</p>
+                        </div>
+
+
+                        <div class="Form_container_payement">
+                            <h2>Méthode de payement</h2>
+                            <div class="payment_container">
+                                <label for="paypal"><img src="public/don/paypal.svg" alt="Paypal"></label>
+                                <input type="radio" name="payement" id="paypal">
+                            </div>
+
+                            <div class="payment_container">
+                                <label for="credit_card"><img src="public/don/image_carte.svg" alt="Carte de crédit"></label>
+                                <input type="radio" name="payement" id="credit_card">
+                            </div>
+
+                            <div class="payment_container">
+                                <label for="Check"><img src="public/don/bank-check.svg" alt="Chèque"></label>
+                                <input type="radio" name="payement" id="Check">
+                            </div>
+
+                            <div class="payment_container">
+                                <label for="prepaid_card"><img src="public/don/euro.svg" alt="Carte prépayée"></label>
+                                <input type="radio" name="payement" id="prepaid_card">
+                            </div>
+
+                            <div class="submit_don">
+                                <input type="submit" value="Envoyer" class="button_other">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <section class="Footer__Join"> <!-- reseaux sociaux -->
+            <h2>Nous rejoindre!</h2>
+            <div class="Footer_Join_container">
+                <a href="https://www.youtube.com/">
+                    <img src="public/icons/youtube.svg" alt="youtube">
+                </a>
+                <a href="https://www.tiktok.com/@le_refuge_de_noel">
+                    <img src="public/icons/tiktok.svg" alt="Tiktok">
+                </a>
+                <a href="https://www.instagram.com/le_refuge_de_noel/">
+                    <img src="public/icons/instagram.svg" alt="Instagram">
+                </a>
+                <a href="https://www.tripadvisor.fr/Profile/Go33070313324">
+                    <img src="public/icons/tripadvisor.svg" alt="Tropadvisor">
+                </a>
+            </div>
+        </section>
+
+        <section class="Footer_legal">
+            <div class="Footer_legal_container">
+                <div class="Legal_mention">
+                    <p>@Blahaj - 2025 - Tous droits réservés - <strong><a href="mentions_legale.html">Mention Legales</a></strong></p>
+                </div>
+
+                <div class="Partners">
+                    <img src="public/icons/occitanie.png" alt="Region Occitanie">
+                    <img class="logo_footer" src="public/icons/logo.png" alt="Logo Refuge">
+                </div>
+
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
